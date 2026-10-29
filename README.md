@@ -52,7 +52,7 @@ features by McMajlos. Licensed under GNU GPLv3.
 1. V Brave otevřete `brave://extensions` (v Chrome `chrome://extensions`).
 2. Zapněte **Režim pro vývojáře**.
 3. Klikněte na **Načíst rozbalené** (Load unpacked).
-4. Vyberte složku `/home/majlos/Downloads/csfd-vyhledavac-brave`.
+4. Vyberte složku s rozšířením (tu, ve které je soubor `manifest.json`).
 
 Složku po instalaci nemažte ani nepřesouvejte: Brave z ní rozšíření načítá.
 Pokud ji chcete uložit jinam, přesuňte ji před instalací.
