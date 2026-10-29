@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ČSFD Vyhledávač</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="options.js"></script>
+  </head>
+  <body>
+    <h1>ČSFD Vyhledávač</h1>
+    <p>Označte název filmu, klikněte pravým tlačítkem a vyberte „Hledat na ČSFD“.</p>
+    <label>
+      <input type="checkbox" id="siteSwitch" disabled />
+      Používat slovenskou ČSFD.sk
+    </label>
+    <p class="hint">Bez zaškrtnutí se používá ČSFD.cz. Volba se ukládá automaticky.</p>
+    <label class="auto-open">
+      <input type="checkbox" id="autoOpenSwitch" disabled />
+      Otevřít rovnou stránku filmu
+    </label>
+    <p class="hint">Funguje i s rokem v označeném textu, například Verity 2026 nebo Verity (2026). Při nejistotě zůstanou výsledky hledání.</p>
+  </body>
+</html>

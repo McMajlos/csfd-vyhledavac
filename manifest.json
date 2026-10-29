@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "ČSFD Vyhledávač",
+  "description": "Vyhledá označený text na ČSFD.cz nebo ČSFD.sk z nabídky pravého tlačítka.",
+  "version": "1.10.0",
+  "author": "Sperhak; úpravy: McMajlos",
+  "permissions": ["contextMenus", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.csfd.cz/hledat/*",
+        "https://www.csfd.sk/hledat/*",
+        "https://www.csfd.sk/hladat/*"
+      ],
+      "js": ["search.js", "search-results.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_title": "ČSFD Vyhledávač",
+    "default_popup": "index.html"
+  }
+}
